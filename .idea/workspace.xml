@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_3">
+    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/loginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Credentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
@@ -74,6 +73,10 @@
     "JUnit.UserTest.createTwoUsers.executor": "Run",
     "JUnit.UserTest.createWithoutEmail.executor": "Run",
     "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.login.executor": "Run",
+    "JUnit.loginTest.login.executor": "Run",
+    "JUnit.loginTest.loginWrongEmail.executor": "Run",
+    "JUnit.loginTest.loginWrongPassword.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "develop2",
@@ -92,7 +95,7 @@
       <recent name="java.lang" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="JUnit.loginTest.loginWrongPassword">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,31 +105,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.createCourier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="METHOD_NAME" value="createCourier" />
+      <option name="METHOD_NAME" value="login" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.createTwoUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="loginTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="METHOD_NAME" value="createTwoUsers" />
+      <option name="MAIN_CLASS_NAME" value="loginTest" />
+      <option name="METHOD_NAME" value="login" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.createWithoutEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="loginTest.loginWrongEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="METHOD_NAME" value="createWithoutEmail" />
+      <option name="MAIN_CLASS_NAME" value="loginTest" />
+      <option name="METHOD_NAME" value="loginWrongEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginTest.loginWrongPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="loginTest" />
+      <option name="METHOD_NAME" value="loginWrongPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.loginTest.loginWrongPassword" />
+        <item itemvalue="JUnit.loginTest.loginWrongEmail" />
+        <item itemvalue="JUnit.loginTest.login" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.createWithoutEmail" />
-        <item itemvalue="JUnit.UserTest.createTwoUsers" />
-        <item itemvalue="JUnit.UserTest.createCourier" />
+        <item itemvalue="JUnit.UserTest.login" />
       </list>
     </recent_temporary>
   </component>

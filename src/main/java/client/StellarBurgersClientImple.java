@@ -33,6 +33,7 @@ public class StellarBurgersClientImple implements StellarBurgersClient {
                 .header("Content-Type", "application/json")
                 .auth().oauth2(accessToken)
                 .baseUri(BASE_URI)
+                .body(credentials)
                 .post(LOGIN_ENDPOINT)
                 .then()
                 .log()

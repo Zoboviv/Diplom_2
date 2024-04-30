@@ -1,4 +1,3 @@
-import client.Credentials;
 import client.StellarBurgersClient;
 import client.StellarBurgersClientImple;
 import client.User;
@@ -27,7 +26,7 @@ public class UserTest {
     @Step("Создание пользователя")
     public void createUser() {
         client=new StellarBurgersClientImple();
-        User user=User.create("Puskin@yandex.ru", "1234", "Puskin");
+        User user=User.create("Puskin1@yandex.ru", "1234", "Puskin1");
         ValidatableResponse response=client.createUser(user);
         response.assertThat().statusCode(200).and().body("success", equalTo(true));
         accessToken=response.extract().jsonPath().getString("accessToken").substring(7);
@@ -37,7 +36,7 @@ public class UserTest {
     @Description("Проверка - нельзя создать двух одинаковых пользователей")
     public void createTwoUsers() {
         createUser();
-        User user=User.create("Puskin@yandex.ru", "1234", "Puskin");
+        User user=User.create("Puskin1@yandex.ru", "1234", "Puskin1");
         ValidatableResponse response=client.createUser(user);
         response.assertThat().statusCode(403).and().onFailMessage("User already exists");
     }
@@ -46,7 +45,7 @@ public class UserTest {
     @Description("Проверка - нельзя создать пользователя без email")
     public void createWithoutEmail() {
         client=new StellarBurgersClientImple();
-        User user=User.create("", "1234", "Puskin");
+        User user=User.create("", "1234", "Puskin1");
         ValidatableResponse response=client.createUser(user);
         response.assertThat().statusCode(403).and().onFailMessage("Email, password and name are required fields");
     }
@@ -55,7 +54,7 @@ public class UserTest {
     @Description("Проверка - нельзя создать пользователя без password")
     public void createWithoutPassword() {
         client=new StellarBurgersClientImple();
-        User user=User.create("Puskin@yandex.ru", "", "Puskin");
+        User user=User.create("Puskin1@yandex.ru", "", "Puskin1");
         ValidatableResponse response=client.createUser(user);
         response.assertThat().statusCode(403).and().onFailMessage("Email, password and name are required fields");
     }
@@ -64,7 +63,7 @@ public class UserTest {
     @Description("Проверка - нельзя создать пользователя без name")
     public void createWithoutName() {
         client=new StellarBurgersClientImple();
-        User user=User.create("Puskin@yandex.ru", "1234", "");
+        User user=User.create("Puskin1@yandex.ru", "1234", "");
         ValidatableResponse response=client.createUser(user);
         response.assertThat().statusCode(403).and().onFailMessage("Email, password and name are required fields");
     }

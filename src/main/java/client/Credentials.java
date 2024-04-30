@@ -8,10 +8,6 @@ public class Credentials {
         return new Credentials(email, password);
     }
 
-    public static Credentials fromUser (User user){
-        return new Credentials(user.getEmail(), user.getPassword());
-    }
-
     public Credentials(String email, String password) {
         this.email=email;
         this.password=password;
