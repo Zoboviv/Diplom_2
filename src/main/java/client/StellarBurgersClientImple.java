@@ -54,5 +54,34 @@ public class StellarBurgersClientImple implements StellarBurgersClient {
                 .all();
     }
 
+    @Override
+    public ValidatableResponse changingUserData(UserData changingData, String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .body(changingData)
+                .patch(USER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse changingUserDataWithoutAuthorization(UserData changingData) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .body(changingData)
+                .patch(USER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
 }
 
