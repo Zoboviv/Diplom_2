@@ -10,7 +10,7 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class loginTest{
+public class LoginTest {
     private StellarBurgersClient client;
     private String accessToken;
 
@@ -48,7 +48,7 @@ public class loginTest{
         createUser();
         Credentials credentials = Credentials.authorization("Puskin1", "1234");
         ValidatableResponse response=client.login(credentials, accessToken);
-        response.assertThat().statusCode(401).and().onFailMessage("email or password are incorrect");;
+        response.assertThat().statusCode(401).and().onFailMessage("email or password are incorrect");
     }
 
     @Test

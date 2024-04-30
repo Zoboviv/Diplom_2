@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ChangingUserDataTest.java" afterDir="false" />
+    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_5">
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrderUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/loginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +76,21 @@
     "JUnit.ChangingUserDataTest.changingEmailAndNameData.executor": "Run",
     "JUnit.ChangingUserDataTest.changingEmailData.executor": "Run",
     "JUnit.ChangingUserDataTest.executor": "Run",
+    "JUnit.OrderTest.changingEmailData.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithAuthorizationNoIngredients.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorization.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorizationNoIngredients.executor": "Run",
+    "JUnit.OrderTest.executor": "Run",
+    "JUnit.OrderUserTest.executor": "Run",
+    "JUnit.OrderUserTest.ordersAuthorizedUser.executor": "Run",
+    "JUnit.OrderUserTest.ordersNotAuthorizedUser.executor": "Run",
     "JUnit.UserTest.createCourier.executor": "Run",
     "JUnit.UserTest.createTwoUsers.executor": "Run",
     "JUnit.UserTest.createWithoutEmail.executor": "Run",
     "JUnit.UserTest.executor": "Run",
     "JUnit.UserTest.login.executor": "Run",
+    "JUnit.loginTest.executor": "Run",
     "JUnit.loginTest.login.executor": "Run",
     "JUnit.loginTest.loginWrongEmail.executor": "Run",
     "JUnit.loginTest.loginWrongPassword.executor": "Run",
@@ -100,61 +112,62 @@
       <recent name="java.lang" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
-    <configuration name="ChangingUserDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderUserTest">
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChangingUserDataTest" />
+      <option name="MAIN_CLASS_NAME" value="OrderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChangingUserDataTest.changingDataWithoutAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChangingUserDataTest" />
-      <option name="METHOD_NAME" value="changingDataWithoutAuthorization" />
+      <option name="MAIN_CLASS_NAME" value="OrderTest" />
+      <option name="METHOD_NAME" value="creatingOrderWithoutAuthorizationIncorrectIngredientHash" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChangingUserDataTest.changingEmailAndNameData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChangingUserDataTest" />
-      <option name="METHOD_NAME" value="changingEmailAndNameData" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderUserTest.ordersAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="METHOD_NAME" value="ordersAuthorizedUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderUserTest.ordersNotAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="METHOD_NAME" value="ordersNotAuthorizedUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.loginTest" />
-        <item itemvalue="JUnit.ChangingUserDataTest" />
-        <item itemvalue="JUnit.ChangingUserDataTest.changingDataWithoutAuthorization" />
-        <item itemvalue="JUnit.ChangingUserDataTest.changingEmailAndNameData" />
+        <item itemvalue="JUnit.OrderUserTest" />
+        <item itemvalue="JUnit.OrderUserTest.ordersNotAuthorizedUser" />
+        <item itemvalue="JUnit.OrderUserTest.ordersAuthorizedUser" />
+        <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714460589766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Коммит_5">
+      <option name="closed" value="true" />
+      <created>1714464539922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714464539922</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +267,7 @@
     <MESSAGE value="Коммит_1 тест" />
     <MESSAGE value="Коммит_2" />
     <MESSAGE value="Коммит_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Коммит_4" />
+    <MESSAGE value="Коммит_5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Коммит_5" />
   </component>
 </project>
