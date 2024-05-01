@@ -27,12 +27,11 @@ public class StellarBurgersClientImple implements StellarBurgersClient {
     }
 
     @Override
-    public ValidatableResponse login(Credentials credentials, String accessToken) {
+    public ValidatableResponse login(Credentials credentials) {
         return given()
                 .log()
                 .all()
                 .header("Content-Type", "application/json")
-                .auth().oauth2(accessToken)
                 .baseUri(BASE_URI)
                 .body(credentials)
                 .post(LOGIN_ENDPOINT)

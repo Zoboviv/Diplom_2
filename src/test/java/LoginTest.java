@@ -37,7 +37,7 @@ public class LoginTest {
     public void login() {
         createUser();
         Credentials credentials = Credentials.authorization("Puskin1@yandex.ru", "1234");
-        ValidatableResponse response=client.login(credentials, accessToken);
+        ValidatableResponse response=client.login(credentials);
         response.assertThat().statusCode(200).and().body("success", equalTo(true));
         accessToken=response.extract().jsonPath().getString("accessToken").substring(7);
     }
@@ -47,7 +47,7 @@ public class LoginTest {
     public void loginWrongEmail() {
         createUser();
         Credentials credentials = Credentials.authorization("Puskin1", "1234");
-        ValidatableResponse response=client.login(credentials, accessToken);
+        ValidatableResponse response=client.login(credentials);
         response.assertThat().statusCode(401).and().onFailMessage("email or password are incorrect");
     }
 
@@ -56,7 +56,7 @@ public class LoginTest {
     public void loginWrongPassword() {
         createUser();
         Credentials credentials = Credentials.authorization("Puskin1@yandex.ru", "12341234");
-        ValidatableResponse response=client.login(credentials, accessToken);
+        ValidatableResponse response=client.login(credentials);
         response.assertThat().statusCode(401).and().onFailMessage("email or password are incorrect");
     }
 

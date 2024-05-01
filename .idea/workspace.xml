@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_5">
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderUserTest.java" afterDir="false" />
+    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/StellarBurgersClientImple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +93,7 @@
     "git-widget-placeholder": "develop2",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Idea/Sprint_7",
+    "last_opened_file_path": "D:/Idea/Diplom/Diplom_2",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -112,22 +106,21 @@
       <recent name="java.lang" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderUserTest">
-    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginTest">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderTest" />
-      <option name="METHOD_NAME" value="creatingOrderWithoutAuthorizationIncorrectIngredientHash" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.OrderUserTest" />
         <item itemvalue="JUnit.OrderUserTest.ordersNotAuthorizedUser" />
         <item itemvalue="JUnit.OrderUserTest.ordersAuthorizedUser" />
         <item itemvalue="JUnit.OrderTest" />
-        <item itemvalue="JUnit.OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714464539922</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Коммит_6">
+      <option name="closed" value="true" />
+      <created>1714471724519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714471724519</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +269,7 @@
     <MESSAGE value="Коммит_2" />
     <MESSAGE value="Коммит_4" />
     <MESSAGE value="Коммит_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Коммит_5" />
+    <MESSAGE value="Коммит_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Коммит_6" />
   </component>
 </project>
