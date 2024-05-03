@@ -1,0 +1,171 @@
+package client;
+
+import io.restassured.response.ValidatableResponse;
+
+import static io.restassured.RestAssured.given;
+
+public class StellarBurgersClientImple implements StellarBurgersClient {
+    private static final String BASE_URI="https://stellarburgers.nomoreparties.site/";
+    private static final String REGISTER_ENDPOINT="/api/auth/register";
+    private static final String LOGIN_ENDPOINT="/api/auth/login";
+    private static final String USER_ENDPOINT="/api/auth/user";
+    private static final String ORDERS_ENDPOINT="/api/orders";
+
+
+    @Override
+    public ValidatableResponse createUser(User user) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .body(user)
+                .post(REGISTER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse login(Credentials credentials) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .body(credentials)
+                .post(LOGIN_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse deleteUser(String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .delete(USER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse changingUserData(UserData changingData, String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .body(changingData)
+                .patch(USER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse changingUserDataWithoutAuthorization(UserData changingData) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .body(changingData)
+                .patch(USER_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderWithIngredients(Order order, String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .body(order)
+                .post(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderWithIngredients(Order order) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .body(order)
+                .post(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderWithoutIngredients(String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .post(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderWithoutIngredients() {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .post(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderUser(String accessToken) {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .auth().oauth2(accessToken)
+                .baseUri(BASE_URI)
+                .get(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+    @Override
+    public ValidatableResponse orderUser() {
+        return given()
+                .log()
+                .all()
+                .header("Content-Type", "application/json")
+                .baseUri(BASE_URI)
+                .get(ORDERS_ENDPOINT)
+                .then()
+                .log()
+                .all();
+    }
+
+}
+
+

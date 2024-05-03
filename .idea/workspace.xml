@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7cd85f12-d61b-4869-bfc2-80bb58a56fb0" name="Changes" comment="Коммит_7">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;Zoboviv&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;Zoboviv&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc6708ee-942f-412e-8d81-a4656457ce7a" />
+        <option name="url" value="git@github.com:Zoboviv/Diplom_2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2flcvjKXueOHTPi6Paptap1Sp5I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,11 +66,111 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ChangingUserDataTest.changingDataWithoutAuthorization.executor": "Run",
+    "JUnit.ChangingUserDataTest.changingEmailAndNameData.executor": "Run",
+    "JUnit.ChangingUserDataTest.changingEmailData.executor": "Run",
+    "JUnit.ChangingUserDataTest.executor": "Run",
+    "JUnit.OrderTest.changingEmailData.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithAuthorizationNoIngredients.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorization.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorizationIncorrectIngredientHash.executor": "Run",
+    "JUnit.OrderTest.creatingOrderWithoutAuthorizationNoIngredients.executor": "Run",
+    "JUnit.OrderTest.executor": "Run",
+    "JUnit.OrderUserTest.executor": "Run",
+    "JUnit.OrderUserTest.ordersAuthorizedUser.executor": "Run",
+    "JUnit.OrderUserTest.ordersNotAuthorizedUser.executor": "Run",
+    "JUnit.UserTest.createCourier.executor": "Run",
+    "JUnit.UserTest.createTwoUsers.executor": "Run",
+    "JUnit.UserTest.createWithoutEmail.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.login.executor": "Run",
+    "JUnit.loginTest.executor": "Run",
+    "JUnit.loginTest.login.executor": "Run",
+    "JUnit.loginTest.loginWrongEmail.executor": "Run",
+    "JUnit.loginTest.loginWrongPassword.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "develop2",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Idea/Diplom/Diplom_2",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="java.lang" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LoginTest">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderUserTest.ordersAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="METHOD_NAME" value="ordersAuthorizedUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderUserTest.ordersNotAuthorizedUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderUserTest" />
+      <option name="METHOD_NAME" value="ordersNotAuthorizedUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.OrderUserTest" />
+        <item itemvalue="JUnit.OrderUserTest.ordersNotAuthorizedUser" />
+        <item itemvalue="JUnit.OrderUserTest.ordersAuthorizedUser" />
+        <item itemvalue="JUnit.OrderTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +180,96 @@
       <option name="presentableId" value="Default" />
       <updated>1714379339702</updated>
     </task>
+    <task id="LOCAL-00001" summary="Коммит_1 тест">
+      <option name="closed" value="true" />
+      <created>1714380295207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714380295207</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Коммит_2">
+      <option name="closed" value="true" />
+      <created>1714409013342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714409013342</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Коммит_4">
+      <option name="closed" value="true" />
+      <created>1714460589766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714460589766</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Коммит_5">
+      <option name="closed" value="true" />
+      <created>1714464539922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714464539922</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Коммит_6">
+      <option name="closed" value="true" />
+      <created>1714471724519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714471724519</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="90ae68c4-cdc6-43e1-88b1-28f912027073" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="90ae68c4-cdc6-43e1-88b1-28f912027073">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Idea/Diplom/Diplom_2/src/main/java/client" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Коммит_1 тест" />
+    <MESSAGE value="Коммит_2" />
+    <MESSAGE value="Коммит_4" />
+    <MESSAGE value="Коммит_5" />
+    <MESSAGE value="Коммит_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Коммит_6" />
   </component>
 </project>
